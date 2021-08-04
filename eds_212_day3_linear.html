@@ -178,17 +178,17 @@ knitr::opts_chunk$set(echo = TRUE)</code></pre>
 <div id="vectors-linear-algebra-in-r" class="section level3">
 <h3>vectors / linear algebra in R</h3>
 <pre class="r"><code># create a simple vector
-vec_a = c(4, 5)
-vec_b = c(-3, 10)
+vec_a = c(1, 6)
+vec_b = c(2, 4)
 
 vec_c = vec_a + vec_b 
 # vector addition
 vec_c</code></pre>
-<pre><code>## [1]  1 15</code></pre>
+<pre><code>## [1]  3 10</code></pre>
 <pre class="r"><code>vec_d = 4 * (vec_b - vec_a)
 # vector sultiplication and subtraction
 vec_d</code></pre>
-<pre><code>## [1] -28  20</code></pre>
+<pre><code>## [1]  4 -8</code></pre>
 </div>
 <div id="dot-product" class="section level3">
 <h3>Dot product</h3>
@@ -196,7 +196,19 @@ vec_d</code></pre>
 <pre class="r"><code>cd_dot = vec_c %*% vec_d
 cd_dot</code></pre>
 <pre><code>##      [,1]
-## [1,]  272</code></pre>
+## [1,]  -68</code></pre>
+</div>
+<div id="eod-activity-with-vec_a-and-vec_b-as-the-vectors-described-in-part-2" class="section level3">
+<h3>EOD activity, with <span class="math inline">\(vec_a\)</span> and <span class="math inline">\(vec_b\)</span> as the vectors described in part 2</h3>
+<pre class="r"><code>vec_a + vec_b</code></pre>
+<pre><code>## [1]  3 10</code></pre>
+<pre class="r"><code>vec_b - vec_a</code></pre>
+<pre><code>## [1]  1 -2</code></pre>
+<pre class="r"><code>4 * vec_a</code></pre>
+<pre><code>## [1]  4 24</code></pre>
+<pre class="r"><code>vec_a %*% vec_b</code></pre>
+<pre><code>##      [,1]
+## [1,]   26</code></pre>
 </div>
 </div>
 

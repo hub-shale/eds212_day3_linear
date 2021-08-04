@@ -16,8 +16,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 # create a simple vector
-vec_a = c(4, 5)
-vec_b = c(-3, 10)
+vec_a = c(1, 6)
+vec_b = c(2, 4)
 
 vec_c = vec_a + vec_b 
 # vector addition
@@ -36,5 +36,15 @@ vec_d
 ```{r}
 cd_dot = vec_c %*% vec_d
 cd_dot
+```
+
+
+### EOD activity, with $vec_a$ and $vec_b$ as the vectors described in part 2
+
+```{r}
+vec_a + vec_b
+vec_b - vec_a
+4 * vec_a
+vec_a %*% vec_b
 ```
 
